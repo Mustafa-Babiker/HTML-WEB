@@ -1,0 +1,250 @@
+/* خلفية الصفحة */
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* الكونتينر */
+.page1 {
+    width: 380px;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+}
+
+/* العنوان */
+h1, h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* الفورم */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+/* الحقول */
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.25);
+    color: #fff;
+}
+
+input::placeholder {
+    color: #eee;
+}
+
+/* (النوع)الجندر */
+.gender-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+input#male, input#female {
+    width: 15px;
+}
+
+/* الزر */
+button, a.btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover, a.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.5);
+}
+
+/* ===============================
+   PAGE 2 - MAIN
+   =============================== */
+
+   .page2 {
+    width: 900px;
+    max-width: 95%;
+}
+
+   /* ===============================
+   PAGE 2 - HEADER
+   =============================== */
+
+.page2 .header {
+    display: flex;
+    justify-content: space-between; /* أقصى الشمال واليمين */
+    align-items: center;
+
+    padding: 16px 25px;
+    margin-bottom: 15px;
+    border-radius: 18px;
+
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+
+/* ===== Logo ===== */
+.page2 .logo {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #fff;
+    
+}
+
+/* ===== Navbar container ===== */
+.page2 .navbar {
+    display: flex;
+    gap: 20px;
+}
+
+/* ===== Navbar links ===== */
+.page2 .navbar a ,a {
+    position: relative;
+    padding: 8px 14px;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+/* Hover background */
+.page2 .navbar .h{
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-2px);
+}
+.o:hover{
+    background: rgba(251, 1, 1, 0.66);
+    transform: translateY(-2px);
+}
+
+/* Underline animation */
+.page2 .navbar a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 4px;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.page2 .navbar a:hover::after{
+    width: 60%;
+}
+
+/* ===============================
+   PAGE 2 - CONTENT
+   =============================== */
+
+   .page2 .content {
+    width: 85%;
+    margin: 0 auto 35px auto; /*  يخلي المحتوى فالنص*/
+}
+
+.page2 .content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.page2 .content ul {
+    list-style: circle;
+    padding-left: 25px;
+}
+
+.page2 .content ul li {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+/* ===============================
+   PAGE 2 - TABLE
+   =============================== */
+
+   .page2 table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.page2 th {
+    background: rgba(255,255,255,0.3);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.page2 th,
+.page2 td {
+    padding: 14px;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.25);
+}
+
+/* zebra effect */
+.page2 tr:nth-child(even) td {
+    background: rgba(255,255,255,0.08);
+}
+
+/* hover row */
+.page2 tr:hover td {
+    background: rgba(255,255,255,0.18);
+}
+.html{
+    display:flex ;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.content img{
+    display: block;
+    width: 340px;
+    height: 100px;
+    margin: 0 auto 20px;
+    border-radius: 15px;
+}
+.page2 video{
+    display: block;
+    height: 600px;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+.footer{
+    text-align: center;
+}

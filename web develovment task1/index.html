@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Web Task 1</title>
+</head>
+<body>
+    <main class="page1">
+
+        <!-- ===== Registration ===== -->
+        <div id="registerBox">
+            <h1>Registration</h1>
+            <form >
+                <div class="form-group">
+                    <label for="fname">First Name</label>
+                    <input id="fname" type="text" placeholder="Enter your first name">
+                </div>
+    
+                <div class="form-group">
+                    <label for="lname">Last Name</label>
+                    <input id="lname" type="text" placeholder="Enter your last name">
+                </div>
+    
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="Enter your email">
+                </div>
+    
+                <div class="form-group">
+                    <label for="pass">Password</label>
+                    <input id="pass" type="password" placeholder="Enter your password">
+                </div>
+    
+                <div class="form-group">
+                    <label>Gender</label>
+                    <div class="gender-group">
+                        <label for="male">Male</label>
+                        <input id="male" type="radio" name="gender">
+    
+                        <label for="female">Female</label>
+                        <input id="female" type="radio" name="gender">
+                    </div>
+                </div>
+    
+                <button onclick="showLogin(event)" type="submit">Register</button>
+            </form>
+        </div>
+    
+        <!-- ===== Login ===== -->
+        <div id="loginBox" style="display:none;">
+            <h1>Login</h1>
+            <form>
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input id="loginEmail" type="email" placeholder="Enter your email">
+                </div>
+    
+                <div class="form-group">
+                    <label for="loginPass">Password</label>
+                    <input id="loginPass" type="password" placeholder="Enter your password">
+                </div>
+            </form>
+            <a href="main.html"><button>Login</button></a>
+        </div>
+    
+    </main>
+
+    <!-- دا كود جافاسكريبت بخلي قسم تسجيل الدخول مخفي الى ان تضغط على تسجيل البيانات ويقوم يخفي قسم التسجيل و يظهر تسجيل الدخول -->
+    
+    <script>
+        function showLogin(event) {
+            event.preventDefault(); 
+        
+            document.getElementById("registerBox").style.display = "none";
+            document.getElementById("loginBox").style.display = "block";
+        }
+        </script>
+        
+</body>
+</html>

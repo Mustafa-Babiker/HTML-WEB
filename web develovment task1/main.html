@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="page2">
+
+        <!-- ===== Header ===== -->
+        <header class="header">
+            <div class="logo"> <img src="icons8-html-5-50.png" alt="Html img"></div>
+        
+            <nav class="navbar">
+                <a class="h" href="main.html">HTML</a>
+                <a class="m" href="#" onclick="showLogin(event)">Media</a>
+                <a class="o" href="index.html">Out</a>
+            </nav>
+        </header>
+        
+    
+        <!-- ===== Content ===== -->
+        <section id="versions" class="content">
+            <h2>HTML Versions</h2>
+            <ul>
+                <li>HTML 1.0</li>
+                <li>HTML 2.0</li>
+                <li>HTML 3.2</li>
+                <li>HTML 4.01</li>
+                <li>XHTML</li>
+                <li>HTML5</li>
+            </ul>
+        </section>
+    
+        <!-- ===== Table ===== -->
+        <section id="table" class="content">
+            <h2>Semantic vs Non-Semantic</h2>
+    
+            <table>
+                <tr>
+                    <th>Semantic Elements</th>
+                    <th>Non-Semantic Elements</th>
+                </tr>
+                <tr>
+                    <td>&lt;header&gt;</td>
+                    <td>&lt;div&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;footer&gt;</td>
+                    <td>&lt;span&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;article&gt;</td>
+                    <td>&lt;b&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;section&gt;</td>
+                    <td>&lt;i&gt;</td>
+                </tr>
+            </table>
+        </section>
+    
+        <!-- ===== Media ===== -->
+        <section id="media" class="content" style="display:none;">
+           <img src="images.png" alt="HTML Tags" srcset="">
+
+    <video id="video" src="video_2025-12-19_10-57-50.mp4" controls></video>
+    
+        <!-- ===== Footer ===== -->
+     
+       <footer class="footer">
+            <p>© 2025 HTML Project | Designed by MMRA</p>
+        </footer>
+    </main>
+    
+    <script>
+        function showLogin(event) {
+            event.preventDefault(); // يمنع إعادة تحميل الصفحة
+        
+            document.getElementById("versions").style.display = "none";
+            document.getElementById("table").style.display = "none";
+            document.getElementById("media").style.display = "block";
+        }
+        </script>
+        
+</body>
+</html>
